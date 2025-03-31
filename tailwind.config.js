@@ -8,7 +8,9 @@ module.exports = {
     extend: {
       colors: {
         primary: 'var(--color-primary)',
+        primaryMuted: 'var(--color-primary-muted)',
         background: 'var(--color-background)',
+        mutedBackground: 'var(--color-muted-background)',
         foreground: 'var(--color-foreground)',
         mutedForeground: 'var(--color-muted-foreground)',
         secondary: 'var(--color-secondary)',
@@ -29,9 +31,11 @@ module.exports = {
       addBase({
         ':root': {
           '--color-primary': '#ce40ad',
+          '--color-primary-muted': '#361e33',
           '--color-background': '#120a11',
+          '--color-background-muted': '#ffffff',
           '--color-foreground': '#ffffff',
-          '--color-muted-foreground': '#ffffff',
+          '--color-muted-foreground': '#b594b0',
           '--color-secondary': '#41203e',
           '--color-accent': '#ff4081',
           '--color-success': '#4caf50',

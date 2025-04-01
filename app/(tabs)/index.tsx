@@ -36,11 +36,14 @@ export default function HomeScreen() {
         <View className="flex w-full px-4">
           <ScrollView className="w-full">
             <View className="flex flex-row flex-wrap">
-              {movies?.results?.map((item) => (
-                <View key={`${item.id}-${item.media_type}`} className="m-2">
-                  <MediaCard media={item} />
-                </View>
-              ))}
+              {movies?.results?.map(
+                (item) =>
+                  item.media_type !== 'person' && (
+                    <View key={`${item.id}-${item.media_type}`} className="m-2">
+                      <MediaCard media={item} />
+                    </View>
+                  )
+              )}
             </View>
           </ScrollView>
         </View>
